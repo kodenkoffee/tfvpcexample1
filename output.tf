@@ -25,6 +25,11 @@ output "ec2instance1" {
 output "ec2instance2" {
   value = aws_instance.ec2_instance2[*].id
 }
+
+output "main_route_table" {
+  value = aws_vpc.main.main_route_table_id
+}
+
 /*
 output "myigw" {
   value = aws_internet_gateway.myigw.id

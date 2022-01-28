@@ -1,3 +1,4 @@
 # ignore below files
 .idea
 .terraform
+tfeconfig.tf

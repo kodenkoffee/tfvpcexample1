@@ -2,6 +2,8 @@ variable "region" {
   default = "ap-south-1"
 }
 
+variable "aws_key_pair_name" {}
+
 variable "access_key" {
   description = "the value will be pulled from terraform cloud workspace environment variable"
 }
@@ -27,5 +29,5 @@ variable "image_id" {
 }
 
 variable "create_ec2_instance" {
-  default = "false"
+  default = "true"
 }
